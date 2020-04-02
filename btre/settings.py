@@ -25,7 +25,7 @@ SECRET_KEY = 'pfrt^e2qk2b36r0)i_pd_2%-kz4ucsnetwe*l2%l)r773z9%t4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -105,6 +105,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# AUTHENTICATION_BACKENDS = ( 
+#     'django.contrib.auth.backends.ModelBackend', 
+# )
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -128,3 +131,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'btre/static')
 ]
+
+# Media folder settings
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
