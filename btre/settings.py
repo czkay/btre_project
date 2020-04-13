@@ -149,6 +149,6 @@ MESSAGE_TAGS = {
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'chong.zi.kang@gmail.com'
+EMAIL_HOST_USER = 'randomstuffies@gmail.com'
 EMAIL_HOST_PASSWORD = 'Iwakmp18'
 EMAIL_USE_TLS = True
